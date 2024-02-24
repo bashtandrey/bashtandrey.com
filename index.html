@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="UA" class="page">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="cache-control" content="no-store" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Головна сторінка Баштана Андрія</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <div id="header-placeholder">header</div>
+    <script>
+        // Загрузка и вставка хедера
+        fetch("/block/header.html")
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById("header-placeholder").innerHTML = html;
+            });
+    </script>
+    <main class="page__main">
+        <section>
+            <div>
+                <h1>Майбутня сторінка Баштана Андрія!!</h1>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder">footer</div>
+    <script>
+        // Загрузка и вставка хедера
+        fetch("/block/footer.html")
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById("footer-placeholder").innerHTML = html;
+            });
+    </script>
+</body>
+
+</html>
